@@ -1,3 +1,7 @@
+"""
+    @Author: Robert Elliott
+"""
+
 # def error(error_type):
 #     if error_type == "div_zero":
 #         return "Error! Division by zero."
@@ -50,7 +54,7 @@
 # print(f"Divided Equally is {division(a, b)} with {modulus(a, b)} Left Over")
 # is_even(a)
 # is_even(b)
-import numpy as np
+# import numpy as np
 
 # one_d = [4, 9, 20, 1, 5, 6, 2, 10, 11]
 
@@ -77,10 +81,28 @@ import numpy as np
 # added = np.multiply(two_one, two_two)
 # print(added)
 
-set_one = {1, 2, 3, 6}
-set_two = {3, 4, 5, 6}
+# set_one = {1, 2, 3, 6}
+# set_two = {3, 4, 5, 6}
 
-print(set_one.union(set_two))
-print(set_one.intersection(set_two))
-print(set_one.difference(set_two))
-print(set_one.symmetric_difference(set_two))
+# print(set_one.union(set_two))
+# print(set_one.intersection(set_two))
+# print(set_one.difference(set_two))
+# print(set_one.symmetric_difference(set_two))
+
+
+def age_check(age: int) -> str:
+    """
+        Returns the age bracket Minor/Teenager/Adult
+    """
+    age_bracket = "Adult"
+    if age < 13:
+        age_bracket = "Minor"
+    if (age >= 13) and (age < 18):
+        age_bracket = "Teenager"
+
+    return age_bracket
+
+
+print(age_check(12))
+print(age_check(18))
+print(age_check(15))
