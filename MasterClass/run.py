@@ -90,19 +90,32 @@
 # print(set_one.symmetric_difference(set_two))
 
 
-def age_check(age: int) -> str:
+# def age_check(age: int) -> str:
+#     """
+#         Returns the age bracket Minor/Teenager/Adult
+#     """
+#     age_bracket = "Adult"
+#     if age < 13:
+#         age_bracket = "Minor"
+#     if (age >= 13) and (age < 18):
+#         age_bracket = "Teenager"
+
+#     return age_bracket
+
+
+# print(age_check(12))
+# print(age_check(18))
+# print(age_check(15))
+
+def factorial(n: int) -> int:
     """
-        Returns the age bracket Minor/Teenager/Adult
+        Returns the factorial of a number
     """
-    age_bracket = "Adult"
-    if age < 13:
-        age_bracket = "Minor"
-    if (age >= 13) and (age < 18):
-        age_bracket = "Teenager"
-
-    return age_bracket
-
-
-print(age_check(12))
-print(age_check(18))
-print(age_check(15))
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    
+print(factorial(5))
+print(factorial(10))
+print(factorial(81))
