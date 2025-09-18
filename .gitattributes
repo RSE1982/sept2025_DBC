@@ -1,1 +1,11 @@
-text=auto # Handle line endings automatically based on the OS
+# Treat all text files as LF
+* text=auto eol=lf
+
+# Declare common binary files so Git won't try to normalize them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
