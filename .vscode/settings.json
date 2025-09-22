@@ -1,3 +1,21 @@
 {
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.linting.pep8Enabled": true,
+    "autopep8.importStrategy": "fromEnvironment",
+    "editor.defaultFoldingRangeProvider": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.flake8",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.inlayHints.padding": true,
+    "python.createEnvironment.contentButton": "show",
+    "python.languageServer": "Default",
+    "flake8.enabled": true,
+    "flake8.severity": {
+        "E": "Error",
+        "F": "Error",
+        "I": "Information",
+        "W": "Warning"
+    }
 }
