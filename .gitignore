@@ -1,2 +1,4 @@
 .mypy_cache
 anaconda_projects
+__pycache__
+.ipynb_checkpoints
