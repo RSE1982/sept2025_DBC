@@ -4,4 +4,8 @@ scikit-learn==1.7.1
 matplotlib==3.10.6
 seaborn==0.13.2
 feature_engine==1.9.3
+ydata-profiling==4.3.1
 pingouin==0.5.5
+ipykernel==6.25.2
+nbformat==5.7.3
+dash==2.14.1
