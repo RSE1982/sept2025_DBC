@@ -1,0 +1,40 @@
+"""_summary_"""
+
+import streamlit as st
+
+# Define a class for managing multiple pages in a Streamlit app
+
+
+class MultiPage:
+    '''Class to manage multiple pages in a Streamlit app.
+    Args:
+        app_name (str): The name of the application.
+    '''
+
+    def __init__(self, app_name) -> None:
+        self.pages = []  # List to store the pages
+        self.app_name = app_name  # Name of the app
+
+        # Set the page configuration
+        st.set_page_config(
+            page_title=self.app_name,
+            page_icon=":computer:"
+        )
+
+    # Method to add a new page to the app
+    def add_page(self, title, func) -> None:
+        '''
+        Add a new page to the app
+        '''
+        self.pages.append({"title": title, "function": func})
+
+    # Method to run the app
+    def run(self):
+        '''
+        Run the multi-page app
+        '''
+        st.title(self.app_name)  # Display the app title
+        # Create a sidebar menu
+        page = st.sidebar.radio(
+            "Menu", self.pages, format_func=lambda page: page["title"])
+        page["function"]()  # Run the selected page's function
