@@ -19,3 +19,5 @@ feature_engine>=1.6.1
 pingouin>=0.2.4
 scipy>=1.11.1
 scapy>=2.1.1
+tqdm>=4.66.1
+ipywidgets>=8.1.0
